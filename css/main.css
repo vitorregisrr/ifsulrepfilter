@@ -32,13 +32,13 @@ a[role="button"] {
   border-radius: 3px;
   padding: 10px 16px;
   transition: all 0.4s;
-  background-color: #80da37;
-  border: 1.5px solid #80da37;
+  background-color: #a7e654;
+  border: 1.5px solid #a7e654;
   color: white; }
   .button-green:hover,
   .button-green .active {
     background-color: rgba(255, 255, 255, 0);
-    color: #80da37; }
+    color: #a7e654; }
 
 .button-outline-green {
   border-radius: 3px;
@@ -47,10 +47,10 @@ a[role="button"] {
   padding: 10px 16px;
   transition: all 0.4s;
   background-color: rgba(255, 255, 255, 0);
-  border: 1.5px solid #80da37;
-  color: #80da37; }
+  border: 1.5px solid #a7e654;
+  color: #a7e654; }
   .button-outline-green:hover {
-    background-color: #80da37;
+    background-color: #a7e654;
     color: white; }
 
 .btn-group .button-outline-green {
@@ -58,7 +58,7 @@ a[role="button"] {
   .btn-group .button-outline-green:not(:last-child) {
     border-right: none; }
   .btn-group .button-outline-green.active {
-    background-color: #80da37;
+    background-color: #a7e654;
     color: white; }
   .btn-group .button-outline-green:active {
     outline: none; }
@@ -93,11 +93,11 @@ a[role="button"] {
   padding: 0px 30px; }
   #materiais-header h1 {
     font-weight: bold;
-    color: #80da37; }
+    color: #a7e654; }
   #materiais-header h2 {
     font-size: 25px;
     font-style: italic;
-    color: #80da37; }
+    color: #a7e654; }
   #materiais-header .btn-group {
     margin-top: 10px;
     display: flex;
@@ -106,13 +106,13 @@ a[role="button"] {
   #materiais-header input {
     text-align: center;
     border-radius: 2px;
-    border: 1.5px solid #80da37;
+    border: 1.5px solid #a7e654;
     color: black;
     width: 100%;
     height: 50px; }
     #materiais-header input:focus {
       outline: none;
-      box-shadow: 0px 0px 1px #80da37; }
+      box-shadow: 0px 0px 1px #a7e654; }
 
 #lista-repositorio {
   -webkit-display: flex;
@@ -161,7 +161,7 @@ a[role="button"] {
       padding: 8px 0px; }
       #lista-repositorio .material footer span.label {
         padding: 3px 8px;
-        background-color: #80da37;
+        background-color: #a7e654;
         border-radius: 20px;
         color: #fff;
         font-size: 12px;
@@ -181,7 +181,7 @@ footer.bodyFooter {
   display: flex;
   vertical-align: center;
   justify-content: center;
-  background-color: #80da37;
+  background-color: #a7e654;
   padding: 10px; }
   footer.bodyFooter p {
     font-size: 17px;
