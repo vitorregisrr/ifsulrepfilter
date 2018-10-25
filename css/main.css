@@ -139,12 +139,6 @@ a[role="button"] {
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.089);
     transition: 0.3s; }
-    @media only screen and (max-width: 768px) {
-      #lista-repositorio .material {
-        width: 100%; } }
-    @media (min-width: 768px) and (max-width: 1024px) {
-      #lista-repositorio .material {
-        width: 100%; } }
     #lista-repositorio .material img {
       width: 210px;
       height: 210px;
@@ -173,6 +167,15 @@ a[role="button"] {
         color: #fff;
         font-size: 12px;
         font-weight: bold; }
+    @media only screen and (max-width: 768px) {
+      #lista-repositorio .material {
+        width: 90%;
+        flex-direction: column; }
+        #lista-repositorio .material img {
+          width: 100%; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      #lista-repositorio .material {
+        width: 100%; } }
 
 footer.bodyFooter {
   width: 100vw;
