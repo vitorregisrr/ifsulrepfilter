@@ -1,0 +1,13 @@
+footer.bodyFooter{
+    width: 100vw;
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+    background-color:  $bio-green;
+    padding: 10px;
+    p{
+        font-size: 17px;
+        color:#fff;
+        text-align: center;
+    }
+}

@@ -1,0 +1,137 @@
+#materiais-header {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/bannermateriais.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 260px;
+    padding: 0px 30px;
+
+    h1 {
+        font-weight: bold;
+        color: $bio-green;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-style: italic;
+        color: $bio-green;
+    }
+
+    .btn-group {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    input{
+        text-align:center;
+        border-radius: 2px;
+        border: 1.5px solid $bio-green;
+        color: black;
+        width: 100%;
+        height: 50px;
+
+        &:focus{
+            outline: none;
+            box-shadow: 0px 0px 1px opacify($bio-green, .5);
+        }
+    }
+}
+
+#lista-repositorio {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: auto;
+    min-height: 60vh;
+    @media only screen and (max-width: 768px) {
+        & {
+           margin-top: 40px;
+        }
+    }
+
+    .material {
+        display: flex;
+        flex-direction: row;
+        flex: 0 1;
+        width: 47%;
+        height: auto;
+        margin: 20px 15px 0px 0px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.089);
+        transition: 0.3s;
+
+        @media only screen and (max-width: 768px) {
+            & {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            & {
+                width: 100%;
+            }
+        }
+
+        img {
+            width: 210px;
+            height: 210px;
+            border-radius: 4px 0px 0px 4px;
+        }
+
+        .material-body {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            padding: 10px 30px;
+        }
+
+        header {
+            h3 {
+                font-weight: bold;
+                font-size: 23px;
+            }
+
+            h4 {
+                font-size: 15px;
+                font-style: italic;
+                margin-bottom: 20px;
+            }
+
+            a[role="button"] {
+                width: 100%;
+                display: block;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+        }
+
+        footer {
+            padding: 8px 0px;
+
+            span.label {
+                padding: 3px 8px;
+                background-color: $bio-green;
+                border-radius: 20px;
+                color: #fff;
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+    }
+}

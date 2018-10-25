@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcout icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <!-- //owl-->
+    <!-- meta seo -->
+    <link rel="shortcout icon" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <META NAME="Googlebot" CONTENT="index,follow">
+    <META NAME="robots" CONTENT="index,follow">
+    <META NAME="Identifier-URL" CONTENT=" ">
+    <META NAME="url" CONTENT=" ">
+    <META NAME="Language" CONTENT="PT-BR">
+    <META NAME="content-language" CONTENT="pt-br">
+    <META NAME="distribution" CONTENT="Global">
+    <META NAME="coverage" CONTENT="Worldwide">
+    <META NAME="Author" CONTENT="Vitor Régis de Ramos - Front-End Developer">
+    <META NAME="Generator" CONTENT=" ">
+    <meta name="description" content=" " />
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- // meta seo-->
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- animate css-->
+    <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
+    <!-- fa font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+
+    <style>
+        body {
+           padding-top: 70px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            body {
+            padding-top: 120px;
+            }
+        }
+    </style>
+
+
+    <title>BioGames - Jogos de Biologia Online</title>
+</head>
+
+<body class="wow fadeIn materiais">
+    <!-- INICIO NAVBAR -->
+    <nav class="fixed-top navbar navbar-expand-lg navbar-light index" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logoIF.png" class="brand-img" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- FIM NAVBAR -->
+
+    <header id="materiais-header">
+        <h1>
+            Repositórios de arquivos
+        </h1>
+        <nav>
+            <div class="filter-button-group btn-group btn-group-sm" role="group" aria-label="Menu dos materiais">
+                <button data-filter=".material" type="button" class="button-outline-green active">Todos</button>
+                <button data-filter=".software" type="button" class="button-outline-green">Softwares</button>
+                <button data-filter=".sprite" type="button" class="button-outline-green">Sprites</button>
+                <button data-filter=".glossario" type="button" class="button-outline-green">Projetos</button>
+            </div>
+            <input type="text" class="quicksearch" placeholder="Search" />
+        </nav>
+    </header>
+
+    <main class="mb-5">
+        <section class="container grid" id="lista-repositorio">
+
+            <article class="material software">
+                <img src="images/postgree.png">
+                <div class="material-body">
+                    <header>
+                        <h3 class="material-nome">Postgree Admin 3.0</h3>
+                        <h4>Software para gerenciamento do banco de dados Postgree</h4>
+                        <a role="button" class="button-outline-green" href="materiais/incubadoraalien.html"><i class="fa fa-download mr-2"></i>Download</a>
+                    </header>
+                    <footer>
+                        <small>
+                            <span class="label">500mb</span>
+                            <span class="label">Sotftware</span>
+                        </small>
+                    </footer>
+                </div>
+            </article>
+
+            <article class="material sprite">
+                <img src="images/craftpix-fairy.jpg">
+                <div class="material-body">
+                    <header>
+                        <h3 class="material-nome">Sprite fadas</h3>
+                        <h4>Sprite do site craftpix com tema fadas.</h4>
+                        <a role="button" class="button-outline-green" href="materiais/incubadoraalien.html"><i class="fa fa-download mr-2"></i>Download</a>
+                    </header>
+                    <footer>
+                        <small>
+                            <span class="label">300kpbs</span>
+                            <span class="label">Sprite</span>
+                        </small>
+                    </footer>
+                </div>
+        </section>
+    </main>
+
+    <!-- FIM CONTEUDO INDEX -->
+    <footer class="bodyFooter">
+        <p>
+            Desenvolvido por <b>Vitor Régis de Ramos</b>
+        </p>
+    </footer>
+    <!-- JS-->
+    <script src="vendor/jquery/jquery-3.3.1.min.js"></script>
+
+    <!-- bootstrap JS-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $('.btn-group button').click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    </script>
+    <!-- navbar colappse JS-->
+    <script src="js/main.js"></script>
+
+    <!-- WOW js-->
+    <script type="text/javascript" src="vendor/wowjs/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        function debounce(fn, threshold) {
+            var timeout;
+            threshold = threshold || 100;
+            return function debounced() {
+                clearTimeout(timeout);
+                var args = arguments;
+                var _this = this;
+
+                function delayed() {
+                    fn.apply(_this, args);
+                }
+                timeout = setTimeout(delayed, threshold);
+            };
+        }
+    </script>
+    <!-- ISOTOPE js-->
+    <script type='text/javascript' src='vendor/isotope-layout/dist/isotope.pkgd.min.js'></script>
+    <script>
+        var qsRegex;
+        var buttonFilter;
+
+        $grid = $('.grid').isotope({
+            itemSelector: '.material',
+            layoutMode: 'fitRows',
+            filter: function () {
+                var $this = $(this);
+                var searchResult = qsRegex ? $this.text().match(qsRegex) : true;
+                var buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
+                return searchResult && buttonResult;
+            }
+        });
+
+        $('.filter-button-group').on('click', 'button', function () {
+            buttonFilter = $(this).attr('data-filter');
+            $grid.isotope();
+        });
+
+        var qsRegex;
+
+        var $quicksearch = $('.quicksearch').keyup(debounce(function () {
+            qsRegex = new RegExp($quicksearch.val(), 'gi');
+            $grid.isotope();
+        }, 200));
+    </script>
+    <!-- //ISOTOPE JS-->
+</body>
+
+</html>

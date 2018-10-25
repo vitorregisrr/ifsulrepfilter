@@ -1,0 +1,189 @@
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  background-image: url("../images/geometry2.png"); }
+
+hr {
+  max-width: 50vw;
+  background-color: #91db4b;
+  height: 2px; }
+
+#mainNav {
+  width: 100vw;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
+  border-bottom: rgba(29, 29, 29, 0.596);
+  background-color: white;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.082);
+  z-index: 1; }
+  #mainNav .brand-img {
+    height: 55px;
+    transition: all 0.4s; }
+
+a[role="button"] {
+  text-decoration: none !important; }
+
+.button-green {
+  border-radius: 3px;
+  padding: 4px 14px;
+  border-radius: 3px;
+  padding: 10px 16px;
+  transition: all 0.4s;
+  background-color: #80da37;
+  border: 1.5px solid #80da37;
+  color: white; }
+  .button-green:hover,
+  .button-green .active {
+    background-color: rgba(255, 255, 255, 0);
+    color: #80da37; }
+
+.button-outline-green {
+  border-radius: 3px;
+  padding: 4px 14px;
+  border-radius: 3px;
+  padding: 10px 16px;
+  transition: all 0.4s;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1.5px solid #80da37;
+  color: #80da37; }
+  .button-outline-green:hover {
+    background-color: #80da37;
+    color: white; }
+
+.btn-group .button-outline-green {
+  padding: 8px 10px; }
+  .btn-group .button-outline-green:not(:last-child) {
+    border-right: none; }
+  .btn-group .button-outline-green.active {
+    background-color: #80da37;
+    color: white; }
+  .btn-group .button-outline-green:active {
+    outline: none; }
+
+.button-outline-white {
+  border-radius: 3px;
+  padding: 4px 14px;
+  border-radius: 3px;
+  padding: 10px 16px;
+  transition: all 0.4s;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1.5px solid #fff;
+  color: #fff; }
+  .button-outline-white:hover {
+    background-color: #fff;
+    color: black; }
+
+#materiais-header {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bannermateriais.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 260px;
+  padding: 0px 30px; }
+  #materiais-header h1 {
+    font-weight: bold;
+    color: #80da37; }
+  #materiais-header h2 {
+    font-size: 25px;
+    font-style: italic;
+    color: #80da37; }
+  #materiais-header .btn-group {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px; }
+  #materiais-header input {
+    text-align: center;
+    border-radius: 2px;
+    border: 1.5px solid #80da37;
+    color: black;
+    width: 100%;
+    height: 50px; }
+    #materiais-header input:focus {
+      outline: none;
+      box-shadow: 0px 0px 1px #80da37; }
+
+#lista-repositorio {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: auto;
+  min-height: 60vh; }
+  @media only screen and (max-width: 768px) {
+    #lista-repositorio {
+      margin-top: 40px; } }
+  #lista-repositorio .material {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1;
+    width: 47%;
+    height: auto;
+    margin: 20px 15px 0px 0px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.089);
+    transition: 0.3s; }
+    @media only screen and (max-width: 768px) {
+      #lista-repositorio .material {
+        width: 100%; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      #lista-repositorio .material {
+        width: 100%; } }
+    #lista-repositorio .material img {
+      width: 210px;
+      height: 210px;
+      border-radius: 4px 0px 0px 4px; }
+    #lista-repositorio .material .material-body {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      padding: 10px 30px; }
+    #lista-repositorio .material header h3 {
+      font-weight: bold;
+      font-size: 23px; }
+    #lista-repositorio .material header h4 {
+      font-size: 15px;
+      font-style: italic;
+      margin-bottom: 20px; }
+    #lista-repositorio .material header a[role="button"] {
+      width: 100%;
+      display: block;
+      text-transform: uppercase;
+      text-align: center; }
+    #lista-repositorio .material footer {
+      padding: 8px 0px; }
+      #lista-repositorio .material footer span.label {
+        padding: 3px 8px;
+        background-color: #80da37;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold; }
+
+footer.bodyFooter {
+  width: 100vw;
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
+  background-color: #80da37;
+  padding: 10px; }
+  footer.bodyFooter p {
+    font-size: 17px;
+    color: #fff;
+    text-align: center; }

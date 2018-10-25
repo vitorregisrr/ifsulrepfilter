@@ -1,0 +1,16 @@
+#mainNav {
+  width: 100vw;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
+  border-bottom: rgba(29, 29, 29, 0.596);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.082);
+  z-index: 1;
+  
+  .brand-img {
+    height: 55px;
+    transition: all 0.4s;
+  }
+
+}
