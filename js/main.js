@@ -24,8 +24,3 @@ $('#return-to-top').click(function() {
         scrollTop : 0                     
     }, 500);
 });
-
-
-function gameToFullScreen(){
-    $('#game').toggleClass('fullscreen');
-}

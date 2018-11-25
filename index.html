@@ -186,16 +186,16 @@
     <!-- ISOTOPE js-->
     <script type='text/javascript' src='vendor/isotope-layout/dist/isotope.pkgd.min.js'></script>
     <script>
-        var qsRegex;
-        var buttonFilter;
+        let qsRegex;
+        let buttonFilter;
 
         $grid = $('.grid').isotope({
             itemSelector: '.material',
             layoutMode: 'fitRows',
             filter: function () {
-                var $this = $(this);
-                var searchResult = qsRegex ? $this.text().match(qsRegex) : true;
-                var buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
+                let $this = $(this);
+                let searchResult = qsRegex ? $this.text().match(qsRegex) : true;
+                let buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
                 return searchResult && buttonResult;
             }
         });
@@ -205,9 +205,7 @@
             $grid.isotope();
         });
 
-        var qsRegex;
-
-        var $quicksearch = $('.quicksearch').keyup(debounce(function () {
+        const $quicksearch = $('.quicksearch').keyup(debounce(function () {
             qsRegex = new RegExp($quicksearch.val(), 'gi');
             $grid.isotope();
         }, 200));
