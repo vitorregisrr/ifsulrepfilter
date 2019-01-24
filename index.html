@@ -192,7 +192,7 @@
         $grid = $('.grid').isotope({
             itemSelector: '.material',
             layoutMode: 'fitRows',
-            filter: () => {
+            filter: function() {
                 let $this = $(this);
                 let searchResult = qsRegex ? $this.text().match(qsRegex) : true;
                 let buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
@@ -200,12 +200,12 @@
             }
         });
 
-        $('.filter-button-group').on('click', 'button', () => {
+        $('.filter-button-group').on('click', 'button', function(){
             buttonFilter = $(this).attr('data-filter');
             $grid.isotope();
         });
 
-        const $quicksearch = $('.quicksearch').keyup(debounce( () => {
+        const $quicksearch = $('.quicksearch').keyup(debounce( function() {
             qsRegex = new RegExp($quicksearch.val(), 'gi');
             $grid.isotope();
         }, 200));
